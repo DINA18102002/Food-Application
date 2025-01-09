@@ -1,0 +1,91 @@
+<style>
+    /* Reset and Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        background: linear-gradient(to right, #ff6f61, #f8f9fa);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Container Styling */
+    .container {
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        width: 90%;
+        max-width: 450px;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Error Message Styling */
+    .container p {
+        color: #dc3545;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        border-bottom: 2px solid #ff6f61;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+
+    /* Link/Button Styling */
+    .container a {
+        display: inline-block;
+        text-decoration: none;
+        color: #ffffff;
+        background-color: #007bff;
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: all 0.3s ease;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Hover Effect for the Button */
+    .container a:hover {
+        background-color: #0056b3;
+        transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+    }
+
+    /* Responsive Design */
+    @media screen and (max-width: 768px) {
+        .container {
+            padding: 20px;
+        }
+
+        .container p {
+            font-size: 18px;
+        }
+
+        .container a {
+            font-size: 14px;
+            padding: 10px 20px;
+        }
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>

@@ -1,0 +1,130 @@
+/* Reset basic margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set basic body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Centered container with content */
+.container {
+    text-align: center;
+    background: #fff;
+    color: #333;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading */
+h1 {
+    font-size: 2.5rem;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+/* Success message */
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styled button link */
+a {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: #27ae60;
+    border-radius: 25px;
+    border: 2px solid #27ae60;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the link */
+a:hover {
+    background-color: #fff;
+    color: #27ae60;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the restaurant info box inside the container */
+.restraunt-info-box {
+    background: #fff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Align text to the left */
+    border: 2px solid #27ae60; /* Green border for the box */
+    display: inline-block; /* Ensures the box size fits its content */
+    width: 100%;
+}
+
+/* Style individual paragraphs inside the info box */
+.restraunt-info-box p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Style highlighted text for the name and ID */
+.restraunt-info-box .highlight {
+    font-weight: bold;
+    color: #27ae60; /* Green color for highlighted text */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    a {
+        font-size: 0.9rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Animation for the container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation */
+.container {
+    animation: fadeIn 1s ease-out;
+}

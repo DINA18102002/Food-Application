@@ -1,0 +1,128 @@
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f4f4f4;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #d91c1b;
+	padding: 20px 20px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar .app-name {
+	font-size: 24px;
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+.navbar p {
+	font-size: 18px;
+	color: #fff;
+	margin: 0;
+}
+
+.navbar p a {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffdd00; /* Zomato yellow */
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.navbar p a:hover {
+	text-decoration: underline;
+}
+
+.navbar .profile {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.profile-header {
+	display: flex;
+	align-items: center;
+	background-color: #ffffff;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.profile-header img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.profile-header h2 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333333;
+}
+
+.profile-header p {
+	color: #999999;
+	font-size: 16px;
+}
+
+.profile-section {
+	background-color: #ffffff;
+	padding: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+.profile-section h3 {
+	font-size: 20px;
+	color: #333333;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.profile-section ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.profile-section ul li {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	border-bottom: 1px solid #eeeeee;
+	cursor: pointer;
+}
+
+.profile-section ul li:hover {
+	background-color: #f4f4f4;
+}
+
+.settings-btn {
+	background-color: #e23744;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.settings-btn:hover {
+	background-color: #c72638;
+}

@@ -1,0 +1,72 @@
+/* Ensure the page takes up the full height of the viewport */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Header styling */
+header {
+    background-color: #ff4757;
+    color: white;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full width to place elements properly */
+    justify-content: space-between; /* Create space between icon and title */
+}
+
+.go-back {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+    flex-grow: 1; /* Makes the header title take available space */
+}
+
+/* Main content container */
+.container {
+    flex-grow: 1; /* Ensures the content area takes available space */
+    margin: 40px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #2f3542;
+    color: white;
+    margin-top: auto; /* Pushes the footer to the bottom */
+    width: 100%; /* Ensures the footer spans the full width */
+}
+
+/* Hover effect for back button */
+.go-back:hover {
+    color: #dcdde1; /* Light grey when hovered */
+}
